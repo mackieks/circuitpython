@@ -180,7 +180,7 @@ void common_hal_sdioio_sdcard_construct(sdioio_sdcard_obj_t *self,
     }
 
     self->capacity = info.BlockNbr * (info.BlockSize / 512);
-    self->frequency = 25000000;
+    self->frequency = 48000000;
 
     reserved_sdio[periph_index - 1] = true;
 
